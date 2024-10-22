@@ -1,7 +1,8 @@
 #!/bin/bash
 
 filename=$1
+lines=$2
 
-head -n 3 "$filename"
+head -n $lines "$filename"
 echo "..."
-tail -n 3 "$filename"
+tail -n $lines "$filename"
